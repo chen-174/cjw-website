@@ -1,174 +1,159 @@
 *{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;;
+    padding:0px;
+    margin:0px;
 }
-
-body{
-    background-color: whitesmoke;
+/*
+header,section,footer{
+    background-color:bisque;
+    border:5px #9d8189 solid;
+    padding:30px 50px;
 }
-
-.navs,.footer{
-    background-color:rgb(39, 140, 248);
-    width:100%;
-}
-
-.navs{
+*/
+header{
+    background-color: rgba(35,28,26,0.8);
     height:80px;
+    width:100%;
+    position:fixed;
+}
+h1{
+    color:white;
+    position:absolute;
+    left:120px;
+    top:0;
     line-height:80px;
-    padding:0px 5%;
-    font-size:20px;
 }
-
-.navs .menus,.navs .logo{
-    float:left;
-}
-
-.navs .logo{
-    width:120px;
-}
-
-.navs .menus{
-    width:70%;
-    height:100%;
-    margin-left:30px;
-}
-
-a{
-    height:100%;
-    text-align: center;
-    text-decoration: none;
-    color:#fff;
-}
-
-.navs .menus a{
-    width:calc(100%/6.4);
-    display:inline-block;
-
-}
-
-.navs .logins{
-    width:8%;
-    float:right;
-}
-
-.navs .logins a{
-    width:calc(100%/2.2);
-    display:inline-block;
-}
-
-.mains{
-    width:100%;
-    height:1000px;
-}
-
-img{
-    object-fit: cover;/*让图片伸展开来，不会错乱*/
-}
-
-.banner{
-    width:100%;
-    height:90vh;
-}
-
-.footer p1{
-    height:50px;
-    line-height:10px;
-    font-size: 20px;
+header a{
     color:white;
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    text-decoration:none;/*去掉下划线*/
 }
-
-.footer p2{
+header a:hover{
+    text-decoration:underline;/*增加指示提醒*/
+}
+header li{
+    display:inline;/*将区块元素转成行内元素*/
+    margin-right:4vw;/*4vw 代表视窗宽度4%，好处是视窗因不同装置表现出不同大小时，vw会自动调整*/
+}
+header ul{
+    position:absolute;
+    right:5vw;
+    top:0;
+    line-height:80px;
+}
+.news{
+    background-color:antiquewhite;
     color:white;
+    height:95vw;
+    background-image:url("images/banner.png");
+    background-repeat:no-repeat;
+    background-size:cover;/*图片填满*/
+    background-position:center;
     display:flex;
+    flex-direction:column;
     align-items:center;
-    justify-content:flex-end;
-    padding:10px;
-    margin-right: 10px;
+    justify-content:center;
 }
-
-.jianjie{
-    width:90%;
-    height: 650px;
-    background-color:white;
-    margin:40px 5%;
-    box-shadow:3px 2px 1px lightgray;
-    border-radius: 10px;
+.news h2{
+    font-size:60px;
 }
-
-.jianjie .msgs{
-    width:60%;
-    height: 100%;
-    float:left;
-    padding:40px;
+.news p{
+    color:#FEF7E6;
+    font-size:18px;
+    margin:25px;
 }
-
-.jianjie .msgs p{
-    font-size:20px;
-    margin:20px 0px;
+.news a{
+    color:white;
+    text-decoration:none;     
+    border:1px solid #ACACAC;
+    padding:10px 20px;
 }
-
-.yuansu{
-    width:70px;
-    vertical-align: middle;/*垂直对齐*/
-}
-
-.jianjie span{
-    margin-left:10px;
-}
-
-.jianjie img.banner2{
-    width:40%;
-    height: 100%;
-    float:right;
-    padding:50px 20px;
-}
-
-.jietu{
-    width:90%;
-    height: 600px;
-    background-color:white;
-    margin:40px 5%;
-    box-shadow:3px 2px 1px lightgray;
-    border-radius: 10px;
-}
-
-.games li{
-    list-style:none;
-    width: calc(100%/3);
-    
-}
-
-.games{
-    width:100%;
-    height:auto;
-    padding:50px;
+.slogan{
+    background-color:#485652;
+    color:white;
+    height:200px;
     display:flex;
-    justify-content: space-around;
+    align-items:center;/*水平居中*/
+    justify-content:center;/*垂直居中*/
+    font-size:20px;
+    line-height:2em;
 }
-
-.jietu .msgs h1{
-    padding:40px;
+footer{
+    background-color:#000000;
+    color:#B7B7B7;
+    height:60px;
+    display:flex;/*flexbox方法*/
+    font-size:14px;
+    align-items:center;/*水平居中*/
+    justify-content:center;/*垂直居中*/
 }
-
-.games li img{
-
-    width: 90%;
-    height: 80%;
-    display: inline-block;/*移动方向*/
-    transform:translateY(-20px);/*y轴 正为下，负为上*/
+.shop{
+    display:flex;
 }
-
-.games li h2{
-    display:inline-block;
-    transform: translateY(-265px);
+.shop img{
+    width:50%;
 }
-
-.games li h3{
-    display:inline-block;
-    transform: translateY(-20px);
+.info{
+    width:50%;
+    background-color:white;
+    display:flex;
+    flex-direction:column;
+    align-items:center;/*水平居中*/
+    justify-content:center;/*垂直居中*/
+}
+.info h2{
+    font-size:40px;
+    margin:20px;
+}
+.info p{
+    text-align:center; 
+}
+.product{
+    display:flex;
+    background-color:#ede9db;
+    justify-content:space-between;
     align-items: center;
+    padding: 100px 180px 80px;
+}
+.product div{
+    width:300px;
+    text-align:center;
+}
+.product img{
+    width:100%;
+    border-radius:10px;
+    height:300px;
+    width:250px;
+}
+.product h3{
+    font-size:20px;
+    margin:20px 0;
+}
+.product p{
+    font-size:14px;
+    line-height:1.6em;
+}
+.letter{
+    background-color:#485652;
+    color:white;
+    padding:60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.letter p{
+    margin-bottom:20px;
+}
+.letter input,.letter button{
+    background-color:transparent;
+    color:white;
+    border:1px solid #949d9a;
+    padding:10px;
+    border-radius:5px;
+}
+.letter input{
+    width:200px;
+    margin-right:15px;
+}
+.letter button{
+    width:80px;
+    cursor:pointer;
 }
