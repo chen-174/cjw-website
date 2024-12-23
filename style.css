@@ -1,159 +1,92 @@
 *{
-    padding:0px;
-    margin:0px;
+    padding:0;
+    margin:0;
+    box-sizing:border-box;;
 }
-/*
-header,section,footer{
-    background-color:bisque;
-    border:5px #9d8189 solid;
-    padding:30px 50px;
+
+body{
+    background-color: whitesmoke;
 }
-*/
-header{
-    background-color: rgba(35,28,26,0.8);
+
+.navs,.footer{
+    background-color:rgb(39, 140, 248);
+    width:100%;
+}
+
+.navs{
     height:80px;
+    line-height:80px;
+    padding:0px 5%;
+    font-size:20px;
+}
+
+.navs .menus,.navs .logo{
+    float:left;
+}
+
+.navs .logo{
+    width:120px;
+}
+
+.navs .menus{
+    width:70%;
+    height:100%;
+    margin-left:30px;
+}
+
+a{
+    height:100%;
+    text-align: center;
+    text-decoration: none;
+    color:#fff;
+}
+
+.navs .menus a{
+    width:calc(100%/6.4);
+    display:inline-block;
+
+}
+
+.navs .logins{
+    width:8%;
+    float:right;
+}
+
+.navs .logins a{
+    width:calc(100%/2.2);
+    display:inline-block;
+}
+
+.mains{
     width:100%;
-    position:fixed;
+    height:100%;
+    padding:20px;
 }
-h1{
+
+img{
+    object-fit: cover;/*让图片伸展开来，不会错乱*/
+}
+
+.banner{
+    width:100%;
+    height:90vh;
+}
+
+.footer p1{
+    height:50px;
+    line-height:10px;
+    font-size: 20px;
     color:white;
-    position:absolute;
-    left:120px;
-    top:0;
-    line-height:80px;
-}
-header a{
-    color:white;
-    text-decoration:none;/*去掉下划线*/
-}
-header a:hover{
-    text-decoration:underline;/*增加指示提醒*/
-}
-header li{
-    display:inline;/*将区块元素转成行内元素*/
-    margin-right:4vw;/*4vw 代表视窗宽度4%，好处是视窗因不同装置表现出不同大小时，vw会自动调整*/
-}
-header ul{
-    position:absolute;
-    right:5vw;
-    top:0;
-    line-height:80px;
-}
-.news{
-    background-color:antiquewhite;
-    color:white;
-    height:95vw;
-    background-image:url("images/banner.png");
-    background-repeat:no-repeat;
-    background-size:cover;/*图片填满*/
-    background-position:center;
     display:flex;
-    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p2{
+    color:white;
+    display:flex;
     align-items:center;
-    justify-content:center;
-}
-.news h2{
-    font-size:60px;
-}
-.news p{
-    color:#FEF7E6;
-    font-size:18px;
-    margin:25px;
-}
-.news a{
-    color:white;
-    text-decoration:none;     
-    border:1px solid #ACACAC;
-    padding:10px 20px;
-}
-.slogan{
-    background-color:#485652;
-    color:white;
-    height:200px;
-    display:flex;
-    align-items:center;/*水平居中*/
-    justify-content:center;/*垂直居中*/
-    font-size:20px;
-    line-height:2em;
-}
-footer{
-    background-color:#000000;
-    color:#B7B7B7;
-    height:60px;
-    display:flex;/*flexbox方法*/
-    font-size:14px;
-    align-items:center;/*水平居中*/
-    justify-content:center;/*垂直居中*/
-}
-.shop{
-    display:flex;
-}
-.shop img{
-    width:50%;
-}
-.info{
-    width:50%;
-    background-color:white;
-    display:flex;
-    flex-direction:column;
-    align-items:center;/*水平居中*/
-    justify-content:center;/*垂直居中*/
-}
-.info h2{
-    font-size:40px;
-    margin:20px;
-}
-.info p{
-    text-align:center; 
-}
-.product{
-    display:flex;
-    background-color:#ede9db;
-    justify-content:space-between;
-    align-items: center;
-    padding: 100px 180px 80px;
-}
-.product div{
-    width:300px;
-    text-align:center;
-}
-.product img{
-    width:100%;
-    border-radius:10px;
-    height:300px;
-    width:250px;
-}
-.product h3{
-    font-size:20px;
-    margin:20px 0;
-}
-.product p{
-    font-size:14px;
-    line-height:1.6em;
-}
-.letter{
-    background-color:#485652;
-    color:white;
-    padding:60px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.letter p{
-    margin-bottom:20px;
-}
-.letter input,.letter button{
-    background-color:transparent;
-    color:white;
-    border:1px solid #949d9a;
+    justify-content:flex-end;
     padding:10px;
-    border-radius:5px;
-}
-.letter input{
-    width:200px;
-    margin-right:15px;
-}
-.letter button{
-    width:80px;
-    cursor:pointer;
+    margin-right: 10px;
 }
