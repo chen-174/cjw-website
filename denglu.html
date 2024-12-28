@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>原神-原神登陆页面</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="images/tubiao.jpg" type="images/x-icon">
+    <style>
+        .login{
+            width:40%;
+            height:640px;
+            margin:5px 30%;
+        }
+        .tittle{
+            width:100%;
+            height:50px;
+            line-height: 50px;
+            border-bottom:2px solid lightgray;/*设置元素的下边框*/
+            text-align: center;
+            font-size:33px;
+            font-weight:bold;/*设置文本的粗细*/
+        }
+        .login input{
+            height:60px;
+            width:100%;
+            line-height:60px;
+            text-indent:1em;/*首行缩进*/
+            font-size:23px;
+            margin-bottom:10px;/*元素的下外边距*/
+            margin-top: 20px;/*元素的上外边距*/
+            outline:none;/*移除点击外边框*/
+            border:1px solid lightgray;
+
+        }
+        .no-passward{
+            width:100%;
+            height:40px;
+            line-height:normal40px;
+            text-align: right;
+            font-size:20px;
+        }
+        button{
+            width:100%;
+            height:55px;
+            text-align: center;
+            border:transparent;/*去除边框*/
+            border-radius: 30px;
+            box-shadow:2px 3px 3px darkslategray;
+            margin-top:20px;
+            font-size:30px;
+        }
+        .banner{
+            height:250px;
+        }
+        .login button img{
+            width:45px;
+            margin:0px 10px;
+            vertical-align: middle;/*用于调整行内元素（如图像、<span>、<a> 等）相对于其父元素中其他内容的垂直位置*/
+        }
+        .mains{
+            
+            height:600px;
+        }
+        .kuai{
+            margin-top:40px;
+            display:flex;
+            justify-content: space-around;
+            width:100%;
+            height:50%;
+            line-height: 5px;
+            font-size:20px;
+        }
+        .footer{
+            margin-top:45px;
+        }
+        input:hover{
+            border:solid 2px rgb(220, 18, 227);
+        }
+        .no-passward:hover{
+            color:rgb(220, 18, 227);
+        }
+        .denglu:hover{
+            color:rgb(220, 18, 227);
+        }
+        .zhuce:hover{
+            color:rgb(220, 18, 227);
+        }
+        button:hover{
+            color:rgb(220, 18, 227);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="navs">
+            <img src="images/logo.png" alt="原神logo" class="logo">
+            <div class="menus">
+                <a href="index.html">网站主页</a>
+                <a href="zhinao.html">入门指南</a>
+                <a href="juese.html">相关角色</a>
+                <a href="huodong.html">原神活动</a>
+          
+            </div>
+            <div class="logins">
+                <a href="denglu.html">登录</a>
+                <a href="zhuce.html">注册</a>
+            </div>
+        </div>
+
+        <img src="images/banner(4).jpg" alt class="banner">
+
+ 
+  
+
+        <div class="mains">
+            <div class="login">
+                <div class="tittle">原神-登录</div>
+                <input type="text" placeholder="请输入用户名" />
+                <input type="text" placeholder="请输入密码" />
+                <div class="no-passward">什么？忘记密码</div>
+                <button><img src="images/yuansu lei.png" alt="">登录</button>
+                <div class="kuai">
+                    <span class="denglu">手机号快捷登录</span>
+                    <span class="zhuce">立即注册</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p1>© 米哈游版权所有 | 2024.12.21</p1>
+            <p2>@chenjiawei</p2>
+        </div>
+    </body>
+</html>
